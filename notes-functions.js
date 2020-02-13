@@ -62,3 +62,7 @@ const renderNotes = function(notes, filters) {
         document.getElementById('notes').appendChild(noteEl);
     });
 };
+//generate the last edited note
+const generateLastEdited = function(timestamp) {
+    return `last edited ${moment(timestamp).fromNow()}`;
+};
